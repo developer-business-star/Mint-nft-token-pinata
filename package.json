@@ -1,0 +1,36 @@
+{
+  "type": "commonjs",
+  "scripts": {
+    "mint": "node --loader ts-node/esm --experimental-specifier-resolution=node src/mint.ts",
+    "upload": "node --loader ts-node/esm --experimental-specifier-resolution=node src/upload-metadata.ts",
+    "upload-image": "node --loader ts-node/esm --experimental-specifier-resolution=node src/upload-image.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.50",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@bundlr-network/client": "^0.11.17",
+    "@coral-xyz/anchor": "^0.31.1",
+    "@metaplex-foundation/js": "^0.20.1",
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.2.0",
+    "@solana/web3.js": "^1.98.2",
+    "arweave": "^1.15.7",
+    "axios": "^1.9.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "form-data": "^4.0.2",
+    "ipfs-http-client": "^50.1.2",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "simple-nft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
